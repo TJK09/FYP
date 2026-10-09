@@ -1,0 +1,30 @@
+---
+- name: Deploy the FYP app
+  hosts: fyp
+
+  tasks:
+    - name: Clone or update the repository
+      git:
+        repo: https://github.com/TJK09/FYP.git
+        dest: /home/azureuser/FYP
+        version: main
+        force: true
+
+    - name: Check for local backend .env
+      stat:
+        path: "{{ playbook_dir }}/../../backend/.env"
+      register: env_file
+      delegate_to: localhost
+      become: false
+
+    - name: Copy backend .env (kept out of Git)
+      copy:
+        src: "{{ playbook_dir }}/../../backend/.env"
+        dest: /home/azureuser/FYP/backend/.env
+        mode: "0600"
+      when: env_file.stat.exists
+
+    - name: Build and start the stack
+      command: docker compose up -d --build
+      args:
+        chdir: /home/azureuser/FYP

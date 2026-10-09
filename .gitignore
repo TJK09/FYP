@@ -15,3 +15,11 @@ dist/
 backend/media/
 backend/depression_audio/
 *.wav
+
+# Terraform
+infra/**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+tfplan
+crash.log
