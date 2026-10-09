@@ -5,6 +5,9 @@ import PhoneInput from "react-phone-input-2";
 import 'react-phone-input-2/lib/style.css';
 import "../styles/pages/signup.css";
 
+
+const API_URL = "http://20.207.197.244:8000/";
+
 const Signup = () => {
   const navigate = useNavigate();
 
@@ -25,7 +28,7 @@ const Signup = () => {
 
   // Fetch departments from backend
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/accounts/departments/")
+    axios.get(API_URL + "accounts/departments/")
       .then((res) => setDepartments(res.data))
       .catch((err) => console.error("Failed to load departments:", err));
   }, []);
@@ -97,7 +100,7 @@ const Signup = () => {
       // For doctor, department is already the ID
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/accounts/user/register/",
+        API_URL + "accounts/user/register/",
         payload
       );
 
