@@ -1,0 +1,17 @@
+# Python
+backend/venv/
+venv/
+__pycache__/
+*.pyc
+.env
+db.sqlite3
+
+# Node
+node_modules/
+dist/
+
+# Large / generated / sensitive files
+*.mp4
+backend/media/
+backend/depression_audio/
+*.wav

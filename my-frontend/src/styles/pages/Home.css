@@ -1,0 +1,148 @@
+.home-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Slider */
+.slider-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+  text-transform: capitalize;
+}
+
+/* Custom Card */
+.custom-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h5 {
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.card-body p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Doctors */
+.doctor-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.doctor-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.doctor-card h5 {
+  margin: 15px 0 5px;
+  color: #1e3a8a;
+}
+
+/* Discover */
+.discover-section {
+  background: #f0f9ff;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.discover-img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-custom {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-custom.primary {
+  background: #1e3a8a;
+  color: #fff;
+}
+
+.btn-custom.primary:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.btn-custom.secondary {
+  background: transparent;
+  border: 2px solid #1e3a8a;
+  color: #1e3a8a;
+}
+
+.btn-custom.secondary:hover {
+  background: #1e3a8a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* FAQ */
+.faq-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.faq-card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}

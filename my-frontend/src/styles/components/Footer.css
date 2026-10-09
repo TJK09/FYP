@@ -1,0 +1,78 @@
+/* Footer Base */
+.footer {
+  background: #1e3a8a; 
+  color: #ffffff;
+  padding: 3rem 1rem 1rem;
+  margin-top: 0; /* <-- changed from 3rem to 0 */
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Columns */
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Headings */
+.footer-col h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ffffff; /* WHITE */
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #e2e8f0; /* soft white */
+  padding-left: 5px;
+}
+
+/* Divider */
+.footer hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 1.5rem 0;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+}

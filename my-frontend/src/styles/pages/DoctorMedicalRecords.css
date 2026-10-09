@@ -1,0 +1,110 @@
+/* Doctor Records Container */
+.doctor-records-container {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-image: url('../../assets/DoctorRecord.jpg'); /* Choose a suitable background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Overlay */
+.doctor-records-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 58, 138, 0.35);
+  z-index: 0;
+}
+
+/* Page Title */
+.records-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+/* PDF Download Button */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: #1e3a8a;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background-color: #16316a;
+}
+
+/* Records Table */
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 1;
+}
+
+.records-table th,
+.records-table td {
+  padding: 12px 15px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.records-table th {
+  background-color: #f3f4f6;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.records-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.records-table td small {
+  color: #6b7280;
+}
+
+/* Loading / No Records Messages */
+.doctor-records-container p {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .records-table th,
+  .records-table td {
+    padding: 8px 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

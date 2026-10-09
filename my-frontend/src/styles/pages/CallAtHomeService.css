@@ -1,0 +1,57 @@
+.call-home {
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #1E1E2F;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .call-home h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .call-home button {
+    display: block;
+    margin: 0 auto;
+    background-color: #28a745;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .call-home button:hover {
+    background-color: #218838;
+  }
+  
+  .home-service-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .home-service-form input,
+  .home-service-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2D2D3D;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+  }
+  
+  .home-service-form button {
+    margin-top: 15px;
+    background-color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .home-service-form button:hover {
+    background-color: #0056b3;
+  }
+  

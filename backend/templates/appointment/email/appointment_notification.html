@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Appointment Notification</title>
+</head>
+<body>
+  {% for recipient in recipients %}
+    <p>Hello {{ recipient.get_full_name|default:recipient.username }},</p>
+
+    {% if action == 'booked' %}
+      {% if recipient.role == 'patient' %}
+        <p>Your appointment has been <strong>booked</strong> with Dr. {{ doctor.get_full_name|default:doctor.username }}.</p>
+      {% else %}
+        <p>Dr. {{ recipient.get_full_name|default:recipient.username }}, you have a new appointment booked with {{ patient.get_full_name|default:patient.username }}.</p>
+      {% endif %}
+    {% elif action == 'confirmed' %}
+      {% if recipient.role == 'patient' %}
+        <p>Your appointment has been <strong>confirmed</strong> with Dr. {{ doctor.get_full_name|default:doctor.username }}.</p>
+      {% else %}
+        <p>Dr. {{ recipient.get_full_name|default:recipient.username }}, the appointment with {{ patient.get_full_name|default:patient.username }} has been confirmed.</p>
+      {% endif %}
+    {% elif action == 'rescheduled' %}
+      {% if recipient.role == 'patient' %}
+        <p>Your appointment has been <strong>rescheduled</strong> by Dr. {{ doctor.get_full_name|default:doctor.username }}.</p>
+      {% else %}
+        <p>Dr. {{ recipient.get_full_name|default:recipient.username }}, the appointment with {{ patient.get_full_name|default:patient.username }} has been rescheduled.</p>
+      {% endif %}
+    {% elif action == 'cancelled' %}
+      {% if recipient.role == 'patient' %}
+        <p>Your appointment has been <strong>cancelled</strong>.</p>
+      {% else %}
+        <p>Dr. {{ recipient.get_full_name|default:recipient.username }}, the appointment with {{ patient.get_full_name|default:patient.username }} has been cancelled.</p>
+      {% endif %}
+    {% else %}
+      <p>The appointment was updated.</p>
+    {% endif %}
+
+    <p>
+      <strong>Date:</strong> {{ appointment.date }}<br/>
+      <strong>Time:</strong> {{ appointment.time }}<br/>
+      <strong>Department:</strong> 
+      {% if appointment.department %}
+        {{ appointment.department.name }}
+      {% else %}
+        N/A
+      {% endif %}
+    </p>
+
+    <hr/>
+  {% endfor %}
+
+  <p>If you have questions, contact us at {{ DEFAULT_FROM_EMAIL }}.</p>
+  <p>Thank you,<br/>Clinic Team</p>
+</body>
+</html>

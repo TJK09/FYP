@@ -1,0 +1,133 @@
+/* ============================
+   Signup Page Styling
+   ============================ */
+
+.signup-page {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  /* Background image */
+  background-image: url('../../assets/Background.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay using pseudo-element */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay for shading */
+.signup-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 58, 138, 0.35); /* Blue shade with 35% opacity */
+  z-index: 0;
+}
+
+/* Page Title */
+.signup-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff; /* white text on overlay */
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+}
+
+/* Signup Form Card */
+.signup-page form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 35px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  transition: 0.3s;
+  position: relative;
+  z-index: 1; /* Above overlay */
+}
+
+.signup-page form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Input Fields */
+.signup-page input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e5e7eb;
+  background: #fafafa;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: 0.25s;
+}
+
+.signup-page input:focus {
+  border-color: #1e3a8a;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(30, 58, 138, 0.25);
+}
+
+/* Signup Button */
+.signup-page button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #1e3a8a !important;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-page button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.signup-page button:active {
+  transform: scale(0.97);
+}
+
+/* Already Registered */
+.signup-option {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-option p {
+  font-size: 0.9rem;
+  color: #fff; /* white text for readability */
+}
+
+.signup-link {
+  color: #fff; /* white link text */
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.signup-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}

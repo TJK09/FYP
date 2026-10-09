@@ -1,0 +1,34 @@
+.doctor-records-container {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.records-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.records-table th,
+.records-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.records-table th {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.records-table tr:nth-child(even) {
+  background: #f8f9fa;
+}
