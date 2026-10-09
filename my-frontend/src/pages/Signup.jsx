@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
 import 'react-phone-input-2/lib/style.css';
-import "../styles/pages/Signup.css";
+import "../styles/pages/signup.css";
 
 const Signup = () => {
   const navigate = useNavigate();

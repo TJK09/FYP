@@ -12,10 +12,10 @@ import img7 from '../assets/DD.jpg';
 import img8 from '../assets/DE.jpg';
 import img12 from '../assets/DF.jpg';
 import { Link } from 'react-router-dom';
-import img9 from '../assets/appoint.webp';
+import img9 from '../assets/Appoint.webp';
 import img10 from '../assets/lab.jfif.jpg';
 import img11 from '../assets/Medical.jfif.jpg';
-import dep from '../assets/dep.jfif.jpg';
+import dep from '../assets/Dep.jfif.jpg';
 
 const Home = () => {
   const images = [

@@ -5,6 +5,7 @@ __pycache__/
 *.pyc
 .env
 db.sqlite3
+check_imports.py
 
 # Node
 node_modules/

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '../styles/pages/Home.css';
-import img from '../assets/1.webp';
-import img2 from '../assets/patient-rooms-1.jpg';
-import img3 from  '../assets/3.jpeg';
-import img4 from '../assets/D1.jpg';
-import img5 from '../assets/D2.jpg';
-import img6 from '../assets/D3.jpeg';
-import img7 from '../assets/D4.avif';
-import img8 from '../assets/D5.webp';
+import '../../styles/pages/Home.css';
+import img from '../../assets/1.webp';
+import img2 from '../../assets/patient-rooms-1.jpg';
+import img3 from  '../../assets/3.jpeg';
+import img4 from '../../assets/D1.jpg';
+import img5 from '../../assets/D2.jpg';
+import img6 from '../../assets/D3.jpeg';
+import img7 from '../../assets/D4.avif';
+import img8 from '../../assets/D5.webp';
 
 const Home = () => {
   const images = [
